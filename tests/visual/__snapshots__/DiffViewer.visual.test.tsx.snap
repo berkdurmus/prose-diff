@@ -1,0 +1,118 @@
+// Vitest Snapshot v1, https://vitest.dev/guide/snapshot.html
+
+exports[`DiffViewer visual > renders side-by-side view 1`] = `
+<div>
+  <div
+    style="display: flex; flex-direction: column; gap: 16px;"
+  >
+    <div
+      style="background: rgb(241, 245, 249); color: rgb(15, 23, 42); padding: 8px 12px; border-radius: 8px; font-size: 12px; display: flex; gap: 12px; flex-wrap: wrap;"
+    >
+      <span>
+        Added: 
+        0
+      </span>
+      <span>
+        Removed: 
+        0
+      </span>
+      <span>
+        Modified: 
+        1
+      </span>
+      <span>
+        Changed: 
+        100.0
+        %
+      </span>
+    </div>
+    <div
+      style="display: flex; gap: 8px; align-items: center;"
+    >
+      <button
+        disabled=""
+        type="button"
+      >
+        Prev
+      </button>
+      <span>
+        1
+         / 
+        1
+      </span>
+      <button
+        disabled=""
+        type="button"
+      >
+        Next
+      </button>
+    </div>
+    <div
+      style="display: grid; grid-template-columns: 1fr 1fr; gap: 16px;"
+    >
+      <div
+        style="max-height: 480px; overflow: auto;"
+      >
+        <div
+          role="listitem"
+          style="padding: 8px 12px; border-radius: 8px; margin-bottom: 8px; background: rgb(254, 226, 226);"
+        >
+          <span
+            aria-hidden="true"
+          >
+            ~
+          </span>
+           
+          <span>
+            <span>
+              Hello
+               
+            </span>
+            <mark
+              style="background-color: rgb(209, 250, 229); padding: 0px 2px;"
+            >
+              wonderful
+               
+            </mark>
+            <span>
+              world.
+               
+            </span>
+          </span>
+        </div>
+      </div>
+      <div
+        style="max-height: 480px; overflow: auto;"
+      >
+        <div
+          role="listitem"
+          style="padding: 8px 12px; border-radius: 8px; margin-bottom: 8px; background: rgb(209, 250, 229);"
+        >
+          <span
+            aria-hidden="true"
+          >
+            ~
+          </span>
+           
+          <span>
+            <span>
+              Hello
+               
+            </span>
+            <mark
+              style="background-color: rgb(209, 250, 229); padding: 0px 2px;"
+            >
+              wonderful
+               
+            </mark>
+            <span>
+              world.
+               
+            </span>
+          </span>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+`;

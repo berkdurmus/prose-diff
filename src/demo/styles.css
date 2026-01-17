@@ -1,0 +1,287 @@
+:root {
+  color-scheme: light dark;
+  font-family: "Inter", system-ui, -apple-system, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  background: #f8fafc;
+  color: #0f172a;
+}
+
+.app {
+  min-height: 100vh;
+  padding: 48px clamp(20px, 6vw, 80px);
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+}
+
+.app.theme-dark {
+  background: #0b1120;
+  color: #e2e8f0;
+}
+
+.app-header {
+  display: flex;
+  justify-content: space-between;
+  gap: 24px;
+  align-items: center;
+}
+
+.eyebrow {
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.2em;
+  color: inherit;
+  opacity: 0.6;
+  margin: 0 0 8px;
+}
+
+h1 {
+  font-size: clamp(28px, 4vw, 44px);
+  margin: 0 0 12px;
+}
+
+.subtitle {
+  max-width: 520px;
+  line-height: 1.6;
+  opacity: 0.8;
+}
+
+.theme-toggle {
+  display: inline-flex;
+  background: rgba(148, 163, 184, 0.15);
+  border-radius: 999px;
+  padding: 4px;
+}
+
+.theme-toggle button {
+  border: none;
+  background: transparent;
+  color: inherit;
+  padding: 8px 16px;
+  border-radius: 999px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.theme-toggle button.active {
+  background: #0f172a;
+  color: #fff;
+}
+
+.app.theme-dark .theme-toggle button.active {
+  background: #e2e8f0;
+  color: #0f172a;
+}
+
+.controls {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  align-items: center;
+  padding: 16px;
+  border-radius: 16px;
+  background: #ffffff;
+  box-shadow: 0 12px 30px rgba(15, 23, 42, 0.08);
+}
+
+.app.theme-dark .controls {
+  background: #111827;
+  box-shadow: 0 12px 30px rgba(15, 23, 42, 0.4);
+}
+
+.actions {
+  margin-left: auto;
+  display: flex;
+  gap: 8px;
+}
+
+.actions button {
+  border: 1px solid rgba(148, 163, 184, 0.3);
+  background: #0f172a;
+  color: #fff;
+  padding: 8px 14px;
+  border-radius: 10px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.actions button.ghost {
+  background: transparent;
+  color: inherit;
+}
+
+.segmented {
+  display: inline-flex;
+  background: rgba(148, 163, 184, 0.2);
+  border-radius: 999px;
+  padding: 4px;
+}
+
+.segmented button {
+  border: none;
+  background: transparent;
+  color: inherit;
+  padding: 8px 16px;
+  border-radius: 999px;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.segmented button.active {
+  background: #0f172a;
+  color: #fff;
+}
+
+.app.theme-dark .segmented button.active {
+  background: #e2e8f0;
+  color: #0f172a;
+}
+
+.app.theme-dark .editor-card,
+.app.theme-dark .viewer-card {
+  background: #0f172a;
+  box-shadow: 0 20px 50px rgba(15, 23, 42, 0.5);
+}
+
+.app.theme-dark .badge {
+  background: rgba(148, 163, 184, 0.2);
+  color: #e2e8f0;
+}
+
+.app.theme-dark .badge.accent {
+  background: rgba(56, 189, 248, 0.2);
+  color: #e2e8f0;
+}
+
+.field {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.field label {
+  font-size: 14px;
+  opacity: 0.7;
+}
+
+select {
+  border-radius: 10px;
+  border: 1px solid rgba(148, 163, 184, 0.4);
+  padding: 8px 12px;
+  background: transparent;
+  color: inherit;
+}
+
+.toggle input {
+  accent-color: #0f172a;
+}
+
+.viewer-card {
+  background: #ffffff;
+  border-radius: 20px;
+  padding: 24px;
+  box-shadow: 0 20px 50px rgba(15, 23, 42, 0.08);
+}
+
+.app.theme-dark .viewer-card {
+  background: #0f172a;
+  box-shadow: 0 20px 50px rgba(15, 23, 42, 0.5);
+}
+
+.editor-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 16px;
+}
+
+.editor-card {
+  background: #ffffff;
+  border-radius: 18px;
+  padding: 16px;
+  box-shadow: 0 18px 40px rgba(15, 23, 42, 0.08);
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.editor-head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.editor-head h3 {
+  margin: 0;
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+  opacity: 0.6;
+}
+
+.badge {
+  font-size: 12px;
+  padding: 4px 10px;
+  border-radius: 999px;
+  background: rgba(148, 163, 184, 0.2);
+}
+
+.badge.accent {
+  background: rgba(14, 116, 144, 0.18);
+  color: #0f172a;
+}
+
+textarea {
+  min-height: 220px;
+  border-radius: 14px;
+  border: 1px solid rgba(148, 163, 184, 0.3);
+  padding: 14px 16px;
+  font-size: 14px;
+  line-height: 1.7;
+  font-family: "Inter", system-ui, -apple-system, sans-serif;
+  resize: vertical;
+  background: rgba(248, 250, 252, 0.9);
+  color: inherit;
+}
+
+.app.theme-dark textarea {
+  background: rgba(15, 23, 42, 0.6);
+  border-color: rgba(148, 163, 184, 0.4);
+}
+
+.compare {
+  display: grid;
+  gap: 16px;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+}
+
+.panel {
+  background: rgba(148, 163, 184, 0.12);
+  border-radius: 16px;
+  padding: 20px;
+}
+
+.panel h3 {
+  margin: 0 0 12px;
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  opacity: 0.6;
+}
+
+pre {
+  margin: 0;
+  white-space: pre-wrap;
+  line-height: 1.6;
+  font-family: "Inter", system-ui, -apple-system, sans-serif;
+}
+
+button {
+  font-family: inherit;
+}
