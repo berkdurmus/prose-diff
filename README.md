@@ -1,5 +1,8 @@
 # Prose Diff
 
+![Prose Diff preview](./asset1.png)
+![Prose Diff preview](./asset2.png)
+
 Semantic diff viewer for prose. Compare text like an editor: sentence-level meaning with word-level clarity.
 
 ## Features
